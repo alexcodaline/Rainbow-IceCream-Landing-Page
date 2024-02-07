@@ -1,0 +1,246 @@
+.about {
+  width: 100%;
+  background-color: #daeeff;
+  height: 100%;
+}
+
+.about-items-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.img-decor1 {
+  grid-area: 1 / 1 / 3 / 4;
+  position: relative;
+  img {
+    width: 966px;
+    height: 350px;
+  }
+}
+.about-desc-1 {
+  grid-area: 3 / 1 / 6 / 4;
+  font: var(--text-desc);
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: 85%;
+  flex-direction: column;
+  line-height: 34px;
+  .about-button {
+    display: flex;
+    width: 60%;
+    gap: 50px;
+    justify-content: space-around;
+    z-index: 99;
+    button {
+      font: var(--font-btn);
+      border-radius: 100px;
+      border: 3px solid #000;
+      background: #f3cb60;
+      width: 200px;
+      height: 50px;
+      &:hover {
+        background: #fff;
+        border: 3px solid #f3cb60;
+        transform: scale(1.1);
+        transition: transform 0.3s ease-in-out;
+      }
+    }
+    .button-try {
+      border: 3px solid #f3cb60;
+      background: #fff;
+      &:hover {
+        border: 3px solid #000;
+        background: #f3cb60;
+        transform: scale(1.1);
+        transition: transform 0.3s ease-in-out;
+      }
+    }
+  }
+}
+.about-title {
+  grid-area: 1 / 1 / 2 / 6;
+  font: var(--title-font-medium);
+  z-index: 0;
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  text-align: center;
+}
+.about-desc-2 {
+  grid-area: 2 / 4 / 4 / 6;
+  font: var(--text-desc);
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  text-align: right;
+  width: 100%;
+  text-align: right;
+  gap: 20px;
+  line-height: 34px;
+  z-index: 99;
+  button {
+    font: var(--font-btn);
+    border-radius: 100px;
+    border: 3px solid #f3cb60;
+    background: #fff;
+    width: 200px;
+    height: 50px;
+    &:hover {
+      background: #f3cb60;
+      border: 3px solid #000;
+      transform: scale(1.1);
+      transition: transform 0.3s ease-in-out;
+    }
+  }
+}
+
+.img-decor2 {
+  grid-area: 3 / 3 / 6 / 6;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
+  img {
+    width: 100%;
+    height: 90%;
+    z-index: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about {
+    width: 100%;
+    background-color: #daeeff;
+    height: 100%;
+  }
+
+  .about-items-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .about-title {
+    font-size: 35px;
+    z-index: 0;
+    width: 80%;
+    left: 50px;
+    position: absolute;
+    top: 2%;
+    text-align: center;
+  }
+  .img-decor1 {
+    width: 100%;
+    position: relative;
+    img {
+      width: 966px;
+      height: 250px;
+    }
+  }
+  .about-desc-1 {
+    font: var(--text-desc);
+    gap: 10px;
+    line-height: 34px;
+    text-align: center;
+    .about-button {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      z-index: 99;
+    }
+  }
+  .about-desc-2 {
+    text-align: center;
+    width: 100%;
+    gap: 10px;
+    z-index: 99;
+    button {
+      width: 100%;
+    }
+  }
+  .img-decor2 {
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    order: 2;
+    img {
+      width: 100%;
+      height: 90%;
+      z-index: 0;
+    }
+  }
+}
+@media (min-width:768px) and (max-width: 1200px) {
+  .about {
+    width: 100%;
+    background-color: #daeeff;
+    height: 100%;
+  }
+
+  .about-items-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .about-title {
+    font-size: 40px;
+    z-index: 0;
+    width: 80%;
+    left: 100px;
+    position: absolute;
+    top: 5%;
+    text-align: center;
+  }
+  .img-decor1 {
+    width: 100%;
+    position: relative;
+    img {
+      width: 966px;
+      height: 250px;
+    }
+  }
+  .about-desc-1 {
+    font: var(--text-desc);
+    gap: 10px;
+    line-height: 34px;
+    text-align: center;
+    .about-button {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      z-index: 99;
+    }
+  }
+  .about-desc-2 {
+    text-align: center;
+    width: 100%;
+    gap: 10px;
+    z-index: 99;
+    button {
+      width: 100%;
+    }
+  }
+  .img-decor2 {
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    order: 2;
+    img {
+      width: 100%;
+      height: 90%;
+      z-index: 0;
+    }
+  }
+}

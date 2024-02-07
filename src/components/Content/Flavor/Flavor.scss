@@ -1,0 +1,557 @@
+.flavor {
+  width: 100%;
+  background-image: url(../../../img/background/flavor.webp);
+  height: 800px;
+  background-size: cover;
+  margin-top: -150px;
+  z-index: 99;
+  position: sticky;
+  height: 800px;
+}
+.flavor-btn-row {
+  width: 100%;
+  position: relative;
+}
+
+.btns-flavor {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  top: -15px;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding-bottom: 150px;
+  button {
+    width: 170px;
+    height: 68px;
+    border-radius: 100px;
+    border: 3px solid #000;
+    font: var(--font-btn);
+    letter-spacing: 2.88px;
+    z-index: 999;
+    text-transform: capitalize;
+    &:first-of-type {
+      display: none;
+    }
+    &:hover {
+      transform: scale(1.1);
+      transition: transform 0.3s ease-in-out;
+    }
+  }
+  .vanila {
+    background: #f6e6bb;
+    transform: translateY(30%) rotate(-7deg);
+  }
+  .blueberry {
+    background: #a470b6;
+    transform: translateY(-10%) rotate(-7deg);
+  }
+  .chocolate {
+    background: #92604c;
+    transform: translateY(-30%) rotate(-2.4deg);
+  }
+  .strawberry {
+    background: #f09bb2;
+    transform: translateY(-30%) rotate(2.4deg);
+  }
+  .pistachio {
+    background: #a5cf8a;
+    transform: translateY(-10%) rotate(7deg);
+  }
+  .mango {
+    background: #f3cb60;
+    transform: translateY(20%) rotate(7deg);
+  }
+}
+
+.flavor-container {
+  display: flex;
+  padding-top: 150px;
+}
+
+.flavor-container-ice {
+  width: 800px;
+  height: 600px;
+  background-image: url(../../../img/background/background-flavor.webp);
+  background-position: center;
+  background-size: 520px;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.ice-cream-large {
+  transform: rotate(17deg);
+}
+.ice-cream-flavor-vanila,
+.ice-cream-flavor-blueberry,
+.ice-cream-flavor-chocolate,
+.ice-cream-flavor-strawberry,
+.ice-cream-flavor-pistachio,
+.ice-cream-flavor-mango {
+  transition: all 0.5s ease;
+  cursor: url("../../../img/cursors/pointer.png"), auto;
+  position: absolute;
+  width: 128.649px;
+  height: 116.954px;
+}
+
+.ice-cream-flavor-vanila {
+  top: 25vh;
+  left: 5vw;
+  img {
+    transform: rotate(-45deg);
+  }
+  z-index: 999;
+}
+.ice-cream-flavor-chocolate {
+  bottom: 0;
+  left: 40%;
+  img {
+    transform: rotate(-20deg);
+  }
+}
+.ice-cream-flavor-blueberry {
+  bottom: 5vh;
+  left: 3vw;
+  width: 300px;
+  height: 200px;
+  z-index: 0;
+}
+
+.ice-cream-flavor-mango {
+  bottom: 25vh;
+  right: 0;
+  width: 300px;
+  height: 225px;
+  img {
+    transform: rotate(-30deg);
+  }
+}
+
+.ice-cream-flavor-pistachio {
+  top: 5vh;
+  right: 10vw;
+  img {
+    transform: rotate(-29deg);
+  }
+  z-index: 99;
+}
+.ice-cream-flavor-strawberry {
+  bottom: 10vh;
+  right: 6vw;
+  img {
+    transform: rotate(-30deg);
+  }
+}
+
+.flavor-desc {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  width: 50%;
+  gap: 30px;
+  position: relative;
+
+  h3 {
+    font-size: 95px;
+    position: relative;
+    font-weight: 700;
+  }
+  span {
+    font-size: 20px;
+    line-height: 34px;
+  }
+  .about-button {
+    display: flex;
+    width: 100%;
+    gap: 50px;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 99;
+    button {
+      font: var(--font-btn);
+      border-radius: 100px;
+      border: 3px solid #000;
+      background: #f3cb60;
+      width: 200px;
+      height: 50px;
+      &:hover {
+        background: #fff;
+        border: 3px solid #f3cb60;
+        transform: scale(1.1);
+        transition: transform 0.3s ease-in-out;
+      }
+    }
+    .button-try {
+      border: 3px solid #f3cb60;
+      background: #fff;
+      &:hover {
+        border: 3px solid #000;
+        background: #f3cb60;
+        transform: scale(1.1);
+        transition: transform 0.3s ease-in-out;
+      }
+    }
+  }
+}
+.flavor-image {
+  position: absolute;
+  top: 100px;
+  right: 325px;
+}
+@media screen and (max-width: 767px) {
+  .flavor {
+    width: 100%;
+    background-image: url(../../../img/background/flavor.webp);
+    height: max-content;
+    background-size: cover;
+    margin-top: -190px;
+    z-index: 99;
+    position: sticky;
+    overflow: hidden;
+    padding-bottom: 70px;
+  }
+  .container-flavor {
+    display: flex;
+    flex-direction: column;
+  }
+  .flavor-btn-row {
+    width: 100%;
+    position: relative;
+    order: 3;
+  }
+  .btns-flavor {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    height: 100px;
+    button {
+      width: 150px;
+      height: 68px;
+      font-size: 18px;
+      text-transform: capitalize;
+      position: absolute;
+      &:hover {
+        transform: none;
+        transition: none;
+      }
+    }
+    .vanila {
+      top: 50%;
+      right: 0;
+      transform: none;
+    }
+    .blueberry {
+      top: 50%;
+      right: 50%;
+      transform: none;
+    }
+    .chocolate {
+      top: 0;
+      right: 60%;
+      transform: none;
+    }
+    .strawberry {
+      top: 105%;
+      right: 60%;
+      transform: none;
+    }
+    .pistachio {
+      top: 0;
+      right: 10%;
+      transform: none;
+    }
+    .mango {
+      top: 105%;
+      right: 10%;
+      transform: none;
+    }
+  }
+
+  .flavor-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+  }
+
+  .flavor-container-ice {
+    width: 100%;
+    height: 90%;
+    background-image: url(../../../img/background/background-flavor.webp);
+    background-position: center;
+    background-size: 350px;
+    background-repeat: no-repeat;
+    position: relative;
+    order: 2;
+  }
+  .ice-cream-large {
+    transform: rotate(-2deg);
+  }
+  .ice-cream-flavor-vanila,
+  .ice-cream-flavor-blueberry,
+  .ice-cream-flavor-chocolate,
+  .ice-cream-flavor-strawberry,
+  .ice-cream-flavor-pistachio,
+  .ice-cream-flavor-mango {
+    transition: all 0.5s ease;
+    cursor: url("../../../img/cursors/pointer.png"), auto;
+    position: absolute;
+    width: 128.649px;
+    height: 116.954px;
+  }
+
+  .ice-cream-flavor-vanila {
+    top: 28vh;
+    left: -5vw;
+    img {
+      transform: rotate(-45deg);
+      width: 120px;
+    }
+    z-index: 999;
+  }
+  .ice-cream-flavor-chocolate {
+    bottom: 5vh;
+    left: 30%;
+    img {
+      transform: rotate(-20deg);
+    }
+  }
+  .ice-cream-flavor-blueberry {
+    bottom: 5vh;
+    left: -15vw;
+    width: 300px;
+    height: 200px;
+    z-index: 0;
+  }
+
+  .ice-cream-flavor-mango {
+    bottom: 20vh;
+    right: -25vw;
+    width: 250px;
+    height: 200px;
+    img {
+      transform: rotate(-30deg);
+      width: 180px;
+      height: 150px;
+    }
+  }
+
+  .ice-cream-flavor-pistachio {
+    top: 10vh;
+    right: 10vw;
+    img {
+      transform: rotate(-29deg);
+    }
+    z-index: 99;
+  }
+  .ice-cream-flavor-strawberry {
+    bottom: 10vh;
+    right: 6vw;
+    img {
+      transform: rotate(-30deg);
+    }
+  }
+
+  .flavor-desc {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    gap: 30px;
+    position: relative;
+    h3 {
+      font-size: 65px;
+      position: relative;
+      font-weight: 700;
+    }
+    span {
+      font-size: 20px;
+      line-height: 34px;
+    }
+  }
+  .flavor-image {
+    position: absolute;
+    top: 50px;
+    right: 300px;
+  }
+}
+@media (min-width:768px) and (max-width: 1200px) {
+  .flavor {
+    width: 100%;
+    background-image: url(../../../img/background/flavor.webp);
+    height: max-content;
+    background-size: cover;
+    margin-top: -220px;
+    z-index: 99;
+    position: sticky;
+    overflow: hidden;
+    padding-bottom: 70px;
+  }
+  .container-flavor {
+    display: flex;
+    flex-direction: column;
+  }
+  .flavor-btn-row {
+    width: 100%;
+    position: relative;
+    order: 3;
+  }
+  .btns-flavor {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    height: 100px;
+    button {
+      width: 150px;
+      height: 68px;
+      font-size: 18px;
+      text-transform: capitalize;
+      position: absolute;
+      &:hover {
+        transform: none;
+        transition: none;
+      }
+    }
+    .vanila {
+      top: 50%;
+      right: 25%;
+      transform: none;
+    }
+    .blueberry {
+      top: 50%;
+      right: 50%;
+      transform: none;
+    }
+    .chocolate {
+      top: 0;
+      right: 80%;
+      transform: none;
+    }
+    .strawberry {
+      top: 105%;
+      right: 80%;
+      transform: none;
+    }
+    .pistachio {
+      top: 0;
+      right: 0;
+      transform: none;
+    }
+    .mango {
+      top: 105%;
+      right: 0;
+      transform: none;
+    }
+  }
+
+  .flavor-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+  }
+
+  .flavor-container-ice {
+    width: 100%;
+    height: 90%;
+    background-image: url(../../../img/background/background-flavor.webp);
+    background-position: center;
+    background-size: 350px;
+    background-repeat: no-repeat;
+    position: relative;
+    order: 2;
+  }
+  .ice-cream-large {
+    transform: rotate(-2deg);
+  }
+  .ice-cream-flavor-vanila,
+  .ice-cream-flavor-blueberry,
+  .ice-cream-flavor-chocolate,
+  .ice-cream-flavor-strawberry,
+  .ice-cream-flavor-pistachio,
+  .ice-cream-flavor-mango {
+    transition: all 0.5s ease;
+    cursor: url("../../../img/cursors/pointer.png"), auto;
+    position: absolute;
+    width: 128.649px;
+    height: 116.954px;
+  }
+
+  .ice-cream-flavor-vanila {
+    top: 28vh;
+    left: -5vw;
+    img {
+      transform: rotate(-45deg);
+      width: 120px;
+    }
+    z-index: 999;
+  }
+  .ice-cream-flavor-chocolate {
+    bottom: 5vh;
+    left: 30%;
+    img {
+      transform: rotate(-20deg);
+    }
+  }
+  .ice-cream-flavor-blueberry {
+    bottom: 5vh;
+    left: -15vw;
+    width: 300px;
+    height: 200px;
+    z-index: 0;
+  }
+
+  .ice-cream-flavor-mango {
+    bottom: 20vh;
+    right: -10vw;
+    width: 250px;
+    height: 200px;
+    img {
+      transform: rotate(-30deg);
+      width: 180px;
+      height: 150px;
+    }
+  }
+
+  .ice-cream-flavor-pistachio {
+    top: 10vh;
+    right: 10vw;
+    img {
+      transform: rotate(-29deg);
+    }
+    z-index: 99;
+  }
+  .ice-cream-flavor-strawberry {
+    bottom: 10vh;
+    right: 6vw;
+    img {
+      transform: rotate(-30deg);
+    }
+  }
+
+  .flavor-desc {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    gap: 30px;
+    position: relative;
+    padding-top: 50px;
+    h3 {
+      font-size: 65px;
+      position: relative;
+      font-weight: 700;
+    }
+    span {
+      font-size: 20px;
+      line-height: 34px;
+    }
+  }
+  .flavor-image {
+    position: absolute;
+    top: 50px;
+    right: auto;
+    left: -10%;
+  }
+}

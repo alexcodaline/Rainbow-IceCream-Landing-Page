@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "Grandstander-Regular";
+  src: url(./fonts/Grandstander-Regular.woff);
+  src: url(./fonts/Grandstander-Regular.woff2);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Grandstander-Medium";
+  src: url(./fonts/Grandstander-Medium.woff);
+  src: url(./fonts/Grandstander-Medium.woff2);
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Grandstander-Bold";
+  src: url(./fonts/Grandstander-Bold.woff);
+  src: url(./fonts/Grandstander-Bold.woff2);
+  font-weight: 700;
+  font-style: normal;
+}
+:root {
+  --header-font: 26px "Grandstander-Regular";
+  --title-font-large: 128px "Grandstander-Bold";
+  --title-font-medium: 75px "Grandstander-Bold";
+  --title-font-bold: 64px "Grandstander-Bold";
+  --text-desc: 20px "Grandstander-Regular";
+  --font-btn: 24px "Grandstander-Medium";
+}
+
+body {
+  font-family: "Grandstander-Regular";
+  color: black;
+  cursor: url("../img/cursors/cursor.png"), auto;
+  a,
+  button {
+    cursor: url("../img/cursors/pointer.png"), auto;
+  }
+}
+.container {
+  max-width: 1920px;
+  max-height: max-content;
+  padding: 0 13% 0 13%;
+  margin: 0 auto;
+}
+@media  screen and (max-width:767px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+}
